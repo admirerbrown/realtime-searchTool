@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_04_001404) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_04_085728) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_trgm"
   enable_extension "plpgsql"
@@ -21,6 +21,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_04_001404) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author"], name: "index_articles_on_author"
+    t.index ["content"], name: "index_articles_on_content"
+    t.index ["title"], name: "index_articles_on_title"
   end
 
 end
