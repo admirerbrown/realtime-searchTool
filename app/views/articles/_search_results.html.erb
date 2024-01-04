@@ -1,0 +1,13 @@
+<%= "Showing #{articles.count} results" %>
+<br>
+<% articles.each do |article| %>
+  <br>
+<div>
+  
+  <%= "Title: #{article.title} - Author: #{article.author} - Content: #{article.content}" %>
+
+  <%= highlight(article.title, params[:title_search])%>
+</div>
+
+  
+<% end %>
