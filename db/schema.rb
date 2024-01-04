@@ -10,20 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_04_085728) do
+ActiveRecord::Schema[7.0].define(version: 20_240_104_124_315) do
   # These are extensions that must be enabled in order to support this database
-  enable_extension "pg_trgm"
-  enable_extension "plpgsql"
+  enable_extension 'pg_trgm'
+  enable_extension 'plpgsql'
 
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.string "author"
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["author"], name: "index_articles_on_author"
-    t.index ["content"], name: "index_articles_on_content"
-    t.index ["title"], name: "index_articles_on_title"
+  create_table 'analytics', force: :cascade do |t|
+    t.string 'ip_address'
+    t.string 'query'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['ip_address'], name: 'index_analytics_on_ip_address'
   end
 
+  create_table 'articles', force: :cascade do |t|
+    t.string 'title'
+    t.string 'author'
+    t.text 'content'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.index ['author'], name: 'index_articles_on_author'
+    t.index ['content'], name: 'index_articles_on_content'
+    t.index ['title'], name: 'index_articles_on_title'
+  end
 end

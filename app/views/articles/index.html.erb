@@ -1,5 +1,5 @@
 <%= form_with url: search_articles_path, method: :post, data: {controller: "debounce", debounce_target: "form"} do |form| %>
-  <%= form.search_field :title_search, data:{action: "input->debounce#search"}%>
+  <%= form.search_field :title_search, data:{action: "input->debounce#search", action_custom: "debounce#setSearchFired"}%>
 <% end %>
 <div id="search_results">search results</div>
 <p style="color: green"><%= notice %></p>

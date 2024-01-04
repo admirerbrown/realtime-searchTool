@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 
   def search
     @articles = if params[:title_search].present?
-                  Article.hybrid_search(params[:title_search])
+                  Article.hybrid_search(params[:title_search], request.remote_ip)
 
                 else
                   []
