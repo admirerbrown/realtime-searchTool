@@ -113,9 +113,9 @@ For more information on the importance of a professional README for your reposit
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> Coming Soon!
 
-- [Live Demo Link](https://google.com)
+- 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,7 +211,7 @@ Example:
 👤 **SAMUEL KYERE**
 
 - GitHub: [@admirebrown](https://github.com/githubhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [samuel kyere](https://www.linkedin.com/in/samuel-ntow-kyere/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
